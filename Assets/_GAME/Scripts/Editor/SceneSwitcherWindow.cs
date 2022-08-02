@@ -10,7 +10,7 @@ namespace AQ.Tools
     {
         private Vector2 scrollPos;
 
-        [MenuItem("Aquare/Scene Switch Window")]
+        [MenuItem("Tools/Scene Switcher Window")]
         private static void ShowWindow()
         {
             var window = GetWindow<SceneSwitchWindow>();
