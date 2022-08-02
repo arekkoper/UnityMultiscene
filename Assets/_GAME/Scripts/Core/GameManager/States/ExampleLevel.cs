@@ -6,11 +6,18 @@ namespace Game
 {
     public class ExampleLevel : GameState
     {
-        public override void EnterState()
+        public override void ReloadScenes()
         {
-            UnloadScene(GameManager.MAIN_MENU_UI);
-            LoadScene(GameManager.EXAMPLE_LEVEL);
-            LoadScene(GameManager.EXAMPLE_LEVEL_UI);
+            ScenesToUnload.Add(GameManager.MAIN_MENU_UI);
+            ScenesToLoad.Add(GameManager.EXAMPLE_LEVEL);
+            ScenesToLoad.Add(GameManager.EXAMPLE_LEVEL_UI);
+
+            EnterState();
+        }
+
+        protected override void EnterState()
+        {
+            Debug.Log("Enter Example Level State");
         }
 
         public override void UpdateState()

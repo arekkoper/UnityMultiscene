@@ -13,6 +13,8 @@ namespace Game
 
         private GameState _currentState;
 
+        public GameState CurrentState { get => _currentState; set => _currentState = value; }
+
         private void Start()
         {
             ChangeState(new MainMenu());
@@ -27,7 +29,7 @@ namespace Game
         {
             state.Manager = this;
             _currentState = state;
-            _currentState.EnterState();
+            _currentState.ReloadScenes();
             OnStateChange?.Invoke();
         }
     }
