@@ -8,4 +8,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_GAME/Scenes/Logic.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/_GAME/Scenes/Levels/ExampleLevel.unity
+    guid: cdc342961333e174893bd2b69c53994d
+  - enabled: 1
+    path: Assets/_GAME/Scenes/UIs/ExampleLevelUI.unity
+    guid: 11ed44db231bcb44eaf61d2233e8fee6
+  - enabled: 1
+    path: Assets/_GAME/Scenes/UIs/MainMenuUI.unity
+    guid: 30015d9c487bce44b8b7fd3f0afa85a7
   m_configObjects: {}
