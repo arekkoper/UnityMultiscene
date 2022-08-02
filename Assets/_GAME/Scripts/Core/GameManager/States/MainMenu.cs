@@ -4,16 +4,17 @@ namespace Game
 {
     public class MainMenu : GameState
     {
-        public static event Action OnMainMenu;
-
         public override void EnterState()
         {
-            OnMainMenu?.Invoke();
+            UnloadScene(GameManager.EXAMPLE_LEVEL);
+            UnloadScene(GameManager.EXAMPLE_LEVEL_UI);
+            LoadScene(GameManager.MAIN_MENU_UI);
         }
 
         public override void UpdateState()
         {
 
         }
+
     }
 }

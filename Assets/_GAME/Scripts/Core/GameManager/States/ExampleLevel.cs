@@ -6,16 +6,17 @@ namespace Game
 {
     public class ExampleLevel : GameState
     {
-        public static event Action OnExampleLevel;
-
         public override void EnterState()
         {
-            OnExampleLevel?.Invoke();
+            UnloadScene(GameManager.MAIN_MENU_UI);
+            LoadScene(GameManager.EXAMPLE_LEVEL);
+            LoadScene(GameManager.EXAMPLE_LEVEL_UI);
         }
 
         public override void UpdateState()
         {
         }
+
 
     }
 }
